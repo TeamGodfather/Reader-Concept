@@ -9,6 +9,7 @@ function createArticle(options) {
     options.imageWidth = options.imageWidth || 240;
     options.imageHeight = options.imageHeight || 160;
     options.abstract = options.abstract || 'placeholder abstract';
+    options.articleUrl = options.articleUrl || '../../index.html';
 
     var container,
         image,
@@ -24,6 +25,8 @@ function createArticle(options) {
     kineticLayer.add(text);
     kineticLayer.add(abstract);
     kineticLayer.draw();
+
+    // kineticLayer.on('dblclick', expandArticle(options));
 }
 
 function createImage(options) {

@@ -12,9 +12,8 @@ function requestTopStories() {
         var options = {
             headline: topStoriesFromAPI.results[7].title,
             abstract: topStoriesFromAPI.results[7].abstract,
-            image: topStoriesFromAPI.results[7].multimedia[3].url
-            // imageWidth: topStoriesFromAPI.results[5].multimedia[3].width,
-            // imageHeight: topStoriesFromAPI.results[5].multimedia[3].height
+            image: topStoriesFromAPI.results[7].multimedia[3].url,
+            articleUrl: topStoriesFromAPI.results[7].url
         };
         createArticle(options);
     }).fail(function (err) {
