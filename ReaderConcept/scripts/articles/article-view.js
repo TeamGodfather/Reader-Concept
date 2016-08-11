@@ -9,7 +9,8 @@ function expandArticle(options) {
             'height': '100%',
             'background-color': 'rgba(33,33,33,0.77)'
         })
+        .html(`<object data="${options.articleUrl}"/>`)
         .appendTo('body');
 
-    articleContainer.load(options.articleUrl);
+    // articleContainer.load(options.articleUrl);
 }

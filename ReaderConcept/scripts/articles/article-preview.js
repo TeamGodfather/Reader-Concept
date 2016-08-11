@@ -26,7 +26,9 @@ function createArticle(options) {
     kineticLayer.add(abstract);
     kineticLayer.draw();
 
-    // kineticLayer.on('dblclick', expandArticle(options));
+    kineticLayer.on('dblclick', function () {
+        expandArticle(options);
+    });
 }
 
 function createImage(options) {

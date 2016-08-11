@@ -1,4 +1,4 @@
-var apiKey = "1ff331c84da248c8a0f8e391b5cf341f",
+var apiKey = "",
     kineticStage,
     kineticLayer,
     stageWidth = 660,
